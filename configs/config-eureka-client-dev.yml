@@ -1,18 +1,5 @@
-data：
-projects:
-  ford-cn-test:
-    version: http://172.16.102.158:8080/entity/v4/version/json?api_key=60c498cd-b202-4bf5-bb08-1265320245a3
-    search: http://172.16.102.158:8080/entity/v4/search/json?api_key=60c498cd-b202-4bf5-bb08-1265320245a3&geo_source=Here&entity_source=here&query=%E4%B8%8A%E6%B5%B7&location=31.236691,121.473451&locale=zh-CN
-    suggestion: http://172.16.102.158:8080/entity/v4/suggestion/json?api_key=60c498cd-b202-4bf5-bb08-1265320245a3&geo_source=Here&entity_source=here&query=%E4%B8%8A%E6%B5%B7&location=31.236691,121.473451&locale=zh-CN
-    rgc: http://172.16.102.158:8080/entity/v4/rgc/json?api_key=60c498cd-b202-4bf5-bb08-1265320245a3&geo_source=Here&entity_source=here&location=31.236691,121.473451&locale=zh-CN
-    detail: http://172.16.102.158:8080/entity/v4/detail/json?api_key=60c498cd-b202-4bf5-bb08-1265320245a3&geo_source=Here&entity_source=here&location=31.236691,121.473451&locale=zh-CN&entity_id=Yz3kuIrmtbfluII7Y289Y247cz3kuIrmtbfluII7dD1jaXR5O2lkPTE3ODA7bHQ9MzEuMjI5ODI7bG49MTIxLjQ3NDAzO3JnYz1mYWxzZTt0dD1jaXR5X2NlbnRlcjtpX2M95LiK5rW3O2lfY289Y2huOwV6
-    category: http://172.16.102.158:8080/entity/v4/category/json?api_key=60c498cd-b202-4bf5-bb08-1265320245a3&geo_source=Here&entity_source=here&locale=zh-CN
-  astrape-na-test:
-    version: http://ec2t-autodenalientitysvc-03.tst.mypna.com:9090/entity/v4/version/json?api_key=telenav.rivian
-    search: http://ec2t-autodenalientitysvc-03.tst.mypna.com:9090/entity/v4/search/json?api_key=telenav.rivian&query=coffee&location=37.78509%2C-122.41988&intent=around&locale=en-US&limit=10&entity_source=Here&geo_source=Here
-    suggestion: http://ec2t-autodenalientitysvc-03.tst.mypna.com:9090/entity/v4/suggestion/json?api_key=telenav.rivian&query=SJC&location=37.37389,-122.00141&intent=around&locale=en-US&limit=10&entity_source=Here&geo_source=Here
-    rgc: http://ec2t-autodenalientitysvc-03.tst.mypna.com:9090/entity/v4/rgc/json?api_key=telenav.rivian&locale=en-US&location=37.369884,-122.037214&entity_source=Here&geo_source=Here
-    detail: http://ec2t-autodenalientitysvc-03.tst.mypna.com:9090/entity/v4/detail/json?api_key=telenav.rivian&locale=en-US&entity_id=P-1442274614&entity_source=Here&geo_source=Here
-    category: http://ec2t-autodenalientitysvc-03.tst.mypna.com:9090/entity/v4/category/json?api_key=telenav.rivian&locale=en-US&entity_source=Here&geo_source=Here
-
- 
+data:
+  env: config-eureka
+  user:
+    username: eureka-client-user-master
+    password: 88888888
