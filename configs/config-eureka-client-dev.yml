@@ -1,3 +1,4 @@
+data：
 projects:
   ford-cn-test:
     version: http://172.16.102.158:8080/entity/v4/version/json?api_key=60c498cd-b202-4bf5-bb08-1265320245a3
