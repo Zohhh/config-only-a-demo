@@ -1,0 +1,374 @@
+routing-cfg:
+  sync4-na-test:
+    version: http://sync4routing-na.tst.k8s.mypna.com:80/v8/route/json?&trace=version
+    traffic_history: http://sync4routing-na.tst.k8s.mypna.com:80/v8/route/json?&trace=traffic_history
+    route: http://sync4routing-na.tst.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://sync4routing-na.tst.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=true
+    history_speed: http://sync4routing-na.tst.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false
+    length: 9
+  sync4-na-stage:
+    version: http://sync4routing-na.stg.k8s.mypna.com:80/v8/route/json?&trace=version
+    traffic_history: http://sync4routing-na.stg.k8s.mypna.com:80/v8/route/json?&trace=traffic_history
+    route: http://sync4routing-na.stg.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://sync4routing-na.stg.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=true
+    history_speed: http://sync4routing-na.stg.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false
+    length: 9
+  sync4-na-prod:
+    version: http://sync4routing-na.k8s.mypna.com:80/v8/route/json?&trace=version
+    traffic_history: http://sync4routing-na.k8s.mypna.com:80/v8/route/json?&trace=traffic_history
+    route: http://sync4routing-na.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://sync4routing-na.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=true
+    history_speed: http://sync4routing-na.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false
+    length: 9
+  nozomi-na-test:
+    version: https://nozomirouting-na.tst.k8s.mypna.com/v8/route/json?&trace=version
+    traffic_history: http://nozomirouting-na.tst.k8s.mypna.com/v8/route/json?&trace=traffic_history
+    route: http://nozomirouting-na.tst.k8s.mypna.com/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://nozomirouting-na.tst.k8s.mypna.com/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=true
+    history_speed: http://nozomirouting-na.tst.k8s.mypna.com/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false
+    length: 9
+  nozomi-na-stage:
+    version: http://nozomirouting-na.stg.k8s.mypna.com/v8/route/json?&trace=version
+    traffic_history: http://nozomirouting-na.stg.k8s.mypna.com/v8/route/json?&trace=traffic_history
+    route: http://nozomirouting-na.stg.k8s.mypna.com/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://nozomirouting-na.stg.k8s.mypna.com/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=true
+    history_speed: http://nozomirouting-na.stg.k8s.mypna.com/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false
+    length: 9
+  nozomi-na-prod:
+    version: http://nozomirouting-na.k8s.mypna.com/v8/route/json?&trace=version
+    traffic_history: http://nozomirouting-na.k8s.mypna.com/v8/route/json?&trace=traffic_history
+    route: http://nozomirouting-na.k8s.mypna.com/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://nozomirouting-na.k8s.mypna.com/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=true
+    history_speed: http://nozomirouting-na.k8s.mypna.com/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false
+    length: 9	
+  nozomi-eu-test:
+    version: http://nozomirouting-eu.tst.k8s.mypna.com/v8/route/json?&trace=version
+    traffic_history: http://nozomirouting-eu.tst.k8s.mypna.com/v8/route/json?&trace=traffic_history
+    route: http://nozomirouting-eu.tst.k8s.mypna.com/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://nozomirouting-eu.tst.k8s.mypna.com/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=true
+    history_speed: http://nozomirouting-eu.tst.k8s.mypna.com/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=false&live_traffic=false
+    length: 9
+  nozomi-eu-stage:
+    version: http://nozomirouting-eu.stg.k8s.mypna.com/v8/route/json?&trace=version
+    traffic_history: http://nozomirouting-eu.stg.k8s.mypna.com/v8/route/json?&trace=traffic_history
+    route: http://nozomirouting-eu.stg.k8s.mypna.com/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://nozomirouting-eu.stg.k8s.mypna.com/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=true
+    history_speed: http://nozomirouting-eu.stg.k8s.mypna.com/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=false&live_traffic=false
+    length: 9
+  nozomi-eu-prod:
+    version: http://nozomirouting-eu.k8s.mypna.com/v8/route/json?&trace=version|http://ec6-mazdarouting-eu-02:8080/v8/route/json?&trace=version|http://mazdarouting-eu:8080/v8/route/json?&trace=version
+    traffic_history: http://nozomirouting-eu.k8s.mypna.com/v8/route/json?&trace=traffic_history|http://ec6-mazdarouting-eu-02:8080/v8/route/json?&trace=traffic_history|http://mazdarouting-eu:8080/v8/route/json?&trace=traffic_history
+    route: http://nozomirouting-eu.k8s.mypna.com/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=false|http://ec6-mazdarouting-eu-02:8080/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=false|http://mazdarouting-eu:8080/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://nozomirouting-eu.k8s.mypna.com/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=true|http://ec6-mazdarouting-eu-02:8080/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=true|http://mazdarouting-eu:8080/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=true
+    history_speed: http://nozomirouting-eu.k8s.mypna.com/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=false&live_traffic=false|http://ec6-mazdarouting-eu-02:8080/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=false&live_traffic=false|http://mazdarouting-eu:8080/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=false&live_traffic=false
+    length: 9
+  nozomi-anz-test:
+    version: http://nozomirouting-anz.tst.k8s.mypna.com/v8/route/json?&trace=version
+    traffic_history: http://nozomirouting-anz.tst.k8s.mypna.com/v8/route/json?&trace=traffic_history
+    route: https://nozomirouting-anz.tst.k8s.mypna.com/v8/route/json?&origin=-37.81444665247702,%20144.9586674006622&destination=-37.8144946528994,%20144.96228262165147&output=all&historical_speed=false&live_traffic=false
+    route_with_traffic: https://nozomirouting-anz.tst.k8s.mypna.com/v8/route/json?&origin=-37.81444665247702,%20144.9586674006622&destination=-37.8144946528994,%20144.96228262165147&output=all&historical_speed=false&live_traffic=true
+    history_speed: https://nozomirouting-anz.tst.k8s.mypna.com/v8/route/json?&origin=-37.81444665247702,%20144.9586674006622&destination=-37.8144946528994,%20144.96228262165147&output=all&historical_speed=true&live_traffic=false
+    length: 9
+    has_history_traffic: false
+  nozomi-anz-stage:
+    version: http://nozomirouting-anz.stg.k8s.mypna.com/v8/route/json?&trace=version
+    traffic_history: http://nozomirouting-anz.stg.k8s.mypna.com/v8/route/json?&trace=traffic_history
+    route: https://nozomirouting-anz.stg.k8s.mypna.com/v8/route/json?&origin=-37.81444665247702,%20144.9586674006622&destination=-37.8144946528994,%20144.96228262165147&output=all&historical_speed=false&live_traffic=false
+    route_with_traffic: https://nozomirouting-anz.stg.k8s.mypna.com/v8/route/json?&origin=-37.81444665247702,%20144.9586674006622&destination=-37.8144946528994,%20144.96228262165147&output=all&historical_speed=false&live_traffic=true
+    history_speed: https://nozomirouting-anz.stg.k8s.mypna.com/v8/route/json?&origin=-37.81444665247702,%20144.9586674006622&destination=-37.8144946528994,%20144.96228262165147&output=all&historical_speed=true&live_traffic=false
+    length: 9	
+    has_history_traffic: false
+  jiangziya-eu-test:
+    version: http://jiangziyarouting-eu.tst.k8s.mypna.com:80/v8/route/json?&trace=version
+    traffic_history: http://jiangziyarouting-eu.tst.k8s.mypna.com:80/v8/route/json?&trace=traffic_history
+    route: http://jiangziyarouting-eu.tst.k8s.mypna.com:80/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://jiangziyarouting-eu.tst.k8s.mypna.com:80/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=true
+    history_speed: http://jiangziyarouting-eu.tst.k8s.mypna.com:80/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=false&live_traffic=false
+    length: 9
+  jiangziya-eu-stage:
+    version: http://jiangziyarouting-eu.stg.k8s.mypna.com:80/v8/route/json?&trace=version
+    traffic_history: http://jiangziyarouting-eu.stg.k8s.mypna.com:80/v8/route/json?&trace=traffic_history
+    route: http://jiangziyarouting-eu.stg.k8s.mypna.com:80/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://jiangziyarouting-eu.stg.k8s.mypna.com:80/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=true
+    history_speed: http://jiangziyarouting-eu.stg.k8s.mypna.com:80/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=false&live_traffic=false
+    length: 9
+  jiangziya-eu-prod:
+    version: http://jiangziyarouting-eu.k8s.mypna.com:80/v8/route/json?&trace=version
+    traffic_history: http://jiangziyarouting-eu.k8s.mypna.com:80/v8/route/json?&trace=traffic_history
+    route: http://jiangziyarouting-eu.k8s.mypna.com:80/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://jiangziyarouting-eu.k8s.mypna.com:80/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=true
+    history_speed: http://jiangziyarouting-eu.k8s.mypna.com:80/v8/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=false&live_traffic=false
+    length: 9
+  denali-rainier-beta-na-stage:
+    version: http://ec2s-denalirouting-beta-na-01.stg.mypna.com:8080/more/directions/v4/json?&trace=version
+    traffic_history: http://ec2s-denalirouting-beta-na-01.stg.mypna.com:8080/v8/route/json?&trace=traffic_history
+    route: http://ec2s-denalirouting-beta-na-01.stg.mypna.com:8080/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://ec2s-denalirouting-beta-na-01.stg.mypna.com:8080/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=true
+    history_speed: http://ec2s-denalirouting-beta-na-01.stg.mypna.com:8080/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false
+    length: 9
+  denali-rainier-prestable-na-prod:
+    version: http://ec1-denalirouting-prestable-na-01.ec1.mypna.com:8080/more/route/json?trace=version&api_version=v5|http://ec1-denalirouting-prestable-na-02.ec1.mypna.com:8080/more/route/json?trace=version&api_version=v5|http://ec1-denalirouting-prestable-na-03.ec1.mypna.com:8080/more/route/json?trace=version&api_version=v5|http://ec1-denalirouting-prestable-na-04.ec1.mypna.com:8080/more/route/json?trace=version&api_version=v5|http://ec1-denalirouting-prestable-na-05.ec1.mypna.com:8080/more/route/json?trace=version&api_version=v5|http://ec1-denalirouting-prestable-na-06.ec1.mypna.com:8080/more/route/json?trace=version&api_version=v5|http://ec1-denalirouting-prestable-na-07.ec1.mypna.com:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://ec1-denalirouting-prestable-na-01.ec1.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5|http://ec1-denalirouting-prestable-na-02.ec1.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5|http://ec1-denalirouting-prestable-na-03.ec1.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5|http://ec1-denalirouting-prestable-na-04.ec1.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5|http://ec1-denalirouting-prestable-na-05.ec1.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5|http://ec1-denalirouting-prestable-na-06.ec1.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5|http://ec1-denalirouting-prestable-na-07.ec1.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://ec1-denalirouting-prestable-na-01.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false&api_version=v5|http://ec1-denalirouting-prestable-na-02.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false&api_version=v5|http://ec1-denalirouting-prestable-na-03.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false&api_version=v5|http://ec1-denalirouting-prestable-na-04.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false&api_version=v5|http://ec1-denalirouting-prestable-na-05.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false&api_version=v5|http://ec1-denalirouting-prestable-na-06.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false&api_version=v5|http://ec1-denalirouting-prestable-na-07.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://ec1-denalirouting-prestable-na-01.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=true&api_version=v5|http://ec1-denalirouting-prestable-na-02.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=true&api_version=v5|http://ec1-denalirouting-prestable-na-03.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=true&api_version=v5|http://ec1-denalirouting-prestable-na-04.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=true&api_version=v5|http://ec1-denalirouting-prestable-na-05.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=true&api_version=v5|http://ec1-denalirouting-prestable-na-06.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=true&api_version=v5|http://ec1-denalirouting-prestable-na-07.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://ec1-denalirouting-prestable-na-01.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false&api_version=v5|http://ec1-denalirouting-prestable-na-02.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false&api_version=v5|http://ec1-denalirouting-prestable-na-03.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false&api_version=v5|http://ec1-denalirouting-prestable-na-04.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false&api_version=v5|http://ec1-denalirouting-prestable-na-05.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false&api_version=v5|http://ec1-denalirouting-prestable-na-06.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false&api_version=v5|http://ec1-denalirouting-prestable-na-07.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 9
+  denali-rainier-stable-na-test:
+    version: http://ec2t-denalirouting-stable-na-01.tst.mypna.com:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://ec2t-denalirouting-stable-na-01.tst.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://ec2t-denalirouting-stable-na-01.tst.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://ec2t-denalirouting-stable-na-01.tst.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://ec2t-denalirouting-stable-na-01.tst.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 9
+  denali-rainier-stable-na-stage:
+    version: http://ec2s-denalirouting-stable-na-01.stg.mypna.com:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://ec2s-denalirouting-stable-na-01.stg.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://ec2s-denalirouting-stable-na-01.stg.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://ec2s-denalirouting-stable-na-01.stg.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://ec2s-denalirouting-stable-na-01.stg.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 9
+  denali-rainier-stable-na-prod:
+    version: http://ec1-denalirouting-stable-na-01.ec1.mypna.com:8080/more/route/json?trace=version&api_version=v5|http://ec1-denalirouting-stable-na-02.ec1.mypna.com:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://ec1-denalirouting-stable-na-01.ec1.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5|http://ec1-denalirouting-stable-na-02.ec1.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://ec1-denalirouting-stable-na-01.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false&api_version=v5|http://ec1-denalirouting-stable-na-02.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://ec1-denalirouting-stable-na-01.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=true&api_version=v5|http://ec1-denalirouting-stable-na-02.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://ec1-denalirouting-stable-na-01.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false&api_version=v5|http://ec1-denalirouting-stable-na-02.ec1.mypna.com:8080/more/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 9
+  denali-rainier-stable-eu-prod:
+    version: http://ec6-denalirouting-stable-eu-01.ec6.mypna.com:8080/more/route/json?trace=version&api_version=v5|http://ec6-denalirouting-stable-eu-02.ec6.mypna.com:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://ec6-denalirouting-stable-eu-01.ec6.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5|http://ec6-denalirouting-stable-eu-02.ec6.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://ec6-denalirouting-stable-eu-01.ec6.mypna.com:8080/more/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=false&api_version=v5|http://ec6-denalirouting-stable-eu-02.ec6.mypna.com:8080/more/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://ec6-denalirouting-stable-eu-01.ec6.mypna.com:8080/more/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=true&api_version=v5|http://ec6-denalirouting-stable-eu-02.ec6.mypna.com:8080/more/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://ec6-denalirouting-stable-eu-01.ec6.mypna.com:8080/more/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=false&live_traffic=false&api_version=v5|http://ec6-denalirouting-stable-eu-02.ec6.mypna.com:8080/more/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 9
+  denali-rainier-stable-cn-test:
+    version: http://172.16.101.119:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://172.16.101.119:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://172.16.101.119:8080/more/route/json?&origin=36.341289,108.840396&destination=27.214580,116.483990&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://172.16.101.119:8080/more/route/json?&origin=36.341289,108.840396&destination=27.214580,116.483990&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://172.16.101.119:8080/more/route/json?&origin=36.341289,108.840396&destination=27.214580,116.483990&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 9
+  denali-rainier-stable-cn-stage:
+    version: http://172.16.226.24:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://172.16.226.24:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://172.16.226.24:8080/more/route/json?&origin=36.341289,108.840396&destination=27.214580,116.483990&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://172.16.226.24:8080/more/route/json?&origin=36.341289,108.840396&destination=27.214580,116.483990&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://172.16.226.24:8080/more/route/json?&origin=36.341289,108.840396&destination=27.214580,116.483990&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 9
+  denali-rainier-stable-cn-prod:
+    version: http://alish1-denalirouting-stable-cn-01.alish.mypna.cn:8080/more/route/json?trace=version&api_version=v5|http://alish2-denalirouting-stable-cn-01.alish.mypna.cn:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://alish1-denalirouting-stable-cn-01.alish.mypna.cn:8080/more/route/json?trace=traffic_history&api_version=v5|http://alish2-denalirouting-stable-cn-01.alish.mypna.cn:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://alish1-denalirouting-stable-cn-01.alish.mypna.cn:8080/more/route/json?&origin=36.341289,108.840396&destination=27.214580,116.483990&output=all&historical_speed=true&live_traffic=false&api_version=v5|http://alish2-denalirouting-stable-cn-01.alish.mypna.cn:8080/more/route/json?&origin=36.341289,108.840396&destination=27.214580,116.483990&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://alish1-denalirouting-stable-cn-01.alish.mypna.cn:8080/more/route/json?&origin=36.341289,108.840396&destination=27.214580,116.483990&output=all&historical_speed=true&live_traffic=true&api_version=v5|http://alish2-denalirouting-stable-cn-01.alish.mypna.cn:8080/more/route/json?&origin=36.341289,108.840396&destination=27.214580,116.483990&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://alish1-denalirouting-stable-cn-01.alish.mypna.cn:8080/more/route/json?&origin=36.341289,108.840396&destination=27.214580,116.483990&output=all&historical_speed=false&live_traffic=false&api_version=v5|http://alish2-denalirouting-stable-cn-01.alish.mypna.cn:8080/more/route/json?&origin=36.341289,108.840396&destination=27.214580,116.483990&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 9
+  denali-rainier-stable-kor-test:
+    version: http://ec5t-denalirouting-stable-kr-01.tst.mypna.com:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://ec5t-denalirouting-stable-kr-01.tst.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://ec5t-denalirouting-stable-kr-01.tst.mypna.com:8080/more/route/json?&origin=38.330867,128.366514&destination=34.547274,126.588324&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://ec5t-denalirouting-stable-kr-01.tst.mypna.com:8080/more/route/json?&origin=38.330867,128.366514&destination=34.547274,126.588324&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://ec5t-denalirouting-stable-kr-01.tst.mypna.com:8080/more/route/json?&origin=38.330867,128.366514&destination=34.547274,126.588324&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 9
+  denali-rainier-stable-kor-stage:
+    version: http://ec5s-denalirouting-stable-kr-01.stg.mypna.com:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://ec5s-denalirouting-stable-kr-01.stg.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://ec5s-denalirouting-stable-kr-01.stg.mypna.com:8080/more/route/json?&origin=38.330867,128.366514&destination=34.547274,126.588324&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://ec5s-denalirouting-stable-kr-01.stg.mypna.com:8080/more/route/json?&origin=38.330867,128.366514&destination=34.547274,126.588324&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://ec5s-denalirouting-stable-kr-01.stg.mypna.com:8080/more/route/json?&origin=38.330867,128.366514&destination=34.547274,126.588324&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 8
+  denali-rainier-stable-kor-prod:
+    version: http://ec5-denalirouting-stable-kr-01.ec5.mypna.com:8080/more/route/json?trace=version&api_version=v5|http://ec5-denalirouting-stable-kr-02.ec5.mypna.com:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://ec5-denalirouting-stable-kr-01.ec5.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5|http://ec5-denalirouting-stable-kr-02.ec5.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://ec5-denalirouting-stable-kr-01.ec5.mypna.com:8080/more/route/json?&origin=38.330867,128.366514&destination=34.547274,126.588324&output=all&historical_speed=true&live_traffic=false&api_version=v5|http://ec5-denalirouting-stable-kr-02.ec5.mypna.com:8080/more/route/json?&origin=38.330867,128.366514&destination=34.547274,126.588324&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://ec5-denalirouting-stable-kr-01.ec5.mypna.com:8080/more/route/json?&origin=38.330867,128.366514&destination=34.547274,126.588324&output=all&historical_speed=true&live_traffic=true&api_version=v5|http://ec5-denalirouting-stable-kr-02.ec5.mypna.com:8080/more/route/json?&origin=38.330867,128.366514&destination=34.547274,126.588324&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://ec5-denalirouting-stable-kr-01.ec5.mypna.com:8080/more/route/json?&origin=38.330867,128.366514&destination=34.547274,126.588324&output=all&historical_speed=false&live_traffic=false&api_version=v5|http://ec5-denalirouting-stable-kr-02.ec5.mypna.com:8080/more/route/json?&origin=38.330867,128.366514&destination=34.547274,126.588324&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 8
+  denali-rainier-stable-sa-test:
+    version: http://ec2t-denalirouting-stable-sa-01.tst.mypna.com:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://ec2t-denalirouting-stable-sa-01.tst.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://ec2t-denalirouting-stable-sa-01.tst.mypna.com:8080/more/route/json?&origin=-50.851027,-70.463345&destination=-34.629555,-58.825188&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://ec2t-denalirouting-stable-sa-01.tst.mypna.com:8080/more/route/json?&origin=-50.851027,-70.463345&destination=-34.629555,-58.825188&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://ec2t-denalirouting-stable-sa-01.tst.mypna.com:8080/more/route/json?&origin=-50.851027,-70.463345&destination=-34.629555,-58.825188&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 8
+  denali-rainier-stable-sa-stage:
+    version: http://ec2s-denalirouting-stable-sa-01.stg.mypna.com:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://ec2s-denalirouting-stable-sa-01.stg.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://ec2s-denalirouting-stable-sa-01.stg.mypna.com:8080/more/route/json?&origin=-50.851027,-70.463345&destination=-34.629555,-58.825188&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://ec2s-denalirouting-stable-sa-01.stg.mypna.com:8080/more/route/json?&origin=-50.851027,-70.463345&destination=-34.629555,-58.825188&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://ec2s-denalirouting-stable-sa-01.stg.mypna.com:8080/more/route/json?&origin=-50.851027,-70.463345&destination=-34.629555,-58.825188&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 8
+  denali-rainier-stable-sa-prod:
+    version: http://ec1-denalirouting-stable-sa-01.ec1.mypna.com:8080/more/route/json?trace=version&api_version=v5|http://ec1-denalirouting-stable-sa-02.ec1.mypna.com:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://ec1-denalirouting-stable-sa-01.ec1.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5|http://ec1-denalirouting-stable-sa-02.ec1.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://ec1-denalirouting-stable-sa-01.ec1.mypna.com:8080/more/route/json?&origin=-50.851027,-70.463345&destination=-34.629555,-58.825188&output=all&historical_speed=true&live_traffic=false&api_version=v5|http://ec1-denalirouting-stable-sa-02.ec1.mypna.com:8080/more/route/json?&origin=-50.851027,-70.463345&destination=-34.629555,-58.825188&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://ec1-denalirouting-stable-sa-01.ec1.mypna.com:8080/more/route/json?&origin=-50.851027,-70.463345&destination=-34.629555,-58.825188&output=all&historical_speed=true&live_traffic=true&api_version=v5|http://ec1-denalirouting-stable-sa-02.ec1.mypna.com:8080/more/route/json?&origin=-50.851027,-70.463345&destination=-34.629555,-58.825188&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://ec1-denalirouting-stable-sa-01.ec1.mypna.com:8080/more/route/json?&origin=-50.851027,-70.463345&destination=-34.629555,-58.825188&output=all&historical_speed=false&live_traffic=false&api_version=v5|http://ec1-denalirouting-stable-sa-02.ec1.mypna.com:8080/more/route/json?&origin=-50.851027,-70.463345&destination=-34.629555,-58.825188&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 8
+  denali-rainier-stable-mea-test:
+    version: http://ec2t-denalirouting-stable-mea-01.tst.mypna.com:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://ec2t-denalirouting-stable-mea-01.tst.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://ec2t-denalirouting-stable-mea-01.tst.mypna.com:8080/more/route/json?&origin=29.888874,40.108244&destination=24.750924,46.772910&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://ec2t-denalirouting-stable-mea-01.tst.mypna.com:8080/more/route/json?&origin=29.888874,40.108244&destination=24.750924,46.772910&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://ec2t-denalirouting-stable-mea-01.tst.mypna.com:8080/more/route/json?&origin=29.888874,40.108244&destination=24.750924,46.772910&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 8
+  denali-rainier-stable-mea-stage:
+    version: http://ec2s-denalirouting-stable-mea-01.stg.mypna.com:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://ec2s-denalirouting-stable-mea-01.stg.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://ec2s-denalirouting-stable-mea-01.stg.mypna.com:8080/more/route/json?&origin=29.888874,40.108244&destination=24.750924,46.772910&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://ec2s-denalirouting-stable-mea-01.stg.mypna.com:8080/more/route/json?&origin=29.888874,40.108244&destination=24.750924,46.772910&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://ec2s-denalirouting-stable-mea-01.stg.mypna.com:8080/more/route/json?&origin=29.888874,40.108244&destination=24.750924,46.772910&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 8
+  denali-rainier-stable-mea-prod:
+    version: http://ec1-denalirouting-stable-mea-01.ec1.mypna.com:8080/more/route/json?trace=version&api_version=v5|http://ec1-denalirouting-stable-mea-02.ec1.mypna.com:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://ec1-denalirouting-stable-mea-01.ec1.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5|http://ec1-denalirouting-stable-mea-02.ec1.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://ec1-denalirouting-stable-mea-01.ec1.mypna.com:8080/more/route/json?&origin=29.888874,40.108244&destination=24.750924,46.772910&output=all&historical_speed=true&live_traffic=false&api_version=v5|http://ec1-denalirouting-stable-mea-02.ec1.mypna.com:8080/more/route/json?&origin=29.888874,40.108244&destination=24.750924,46.772910&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://ec1-denalirouting-stable-mea-01.ec1.mypna.com:8080/more/route/json?&origin=29.888874,40.108244&destination=24.750924,46.772910&output=all&historical_speed=true&live_traffic=true&api_version=v5|http://ec1-denalirouting-stable-mea-02.ec1.mypna.com:8080/more/route/json?&origin=29.888874,40.108244&destination=24.750924,46.772910&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://ec1-denalirouting-stable-mea-01.ec1.mypna.com:8080/more/route/json?&origin=29.888874,40.108244&destination=24.750924,46.772910&output=all&historical_speed=false&live_traffic=false&api_version=v5|http://ec1-denalirouting-stable-mea-02.ec1.mypna.com:8080/more/route/json?&origin=29.888874,40.108244&destination=24.750924,46.772910&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 8
+  ov-bilstein-eu-test:
+    version: http://ec2t-denalirouting-stable-eu-01.tst.mypna.com:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://ec2t-denalirouting-stable-eu-01.tst.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://ec2t-denalirouting-stable-eu-01.tst.mypna.com:8080/more/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://ec2t-denalirouting-stable-eu-01.tst.mypna.com:8080/more/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://ec2t-denalirouting-stable-eu-01.tst.mypna.com:8080/more/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 9
+  ov-bilstein-eu-stage:
+    version: http://ec2s-denalirouting-stable-eu-01.stg.mypna.com:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://ec2s-denalirouting-stable-eu-01.stg.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://ec2s-denalirouting-stable-eu-01.stg.mypna.com:8080/more/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://ec2s-denalirouting-stable-eu-01.stg.mypna.com:8080/more/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://ec2s-denalirouting-stable-eu-01.stg.mypna.com:8080/more/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 9
+  ov-bilstein-eu-prod:
+    version: http://ec6-bilsteinmarouting-stable-eu-01.ec6.mypna.com:8080/more/route/json?trace=version&api_version=v5|http://ec6-bilsteinmarouting-stable-eu-02.ec6.mypna.com:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://ec6-bilsteinmarouting-stable-eu-01.ec6.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5|http://ec6-bilsteinmarouting-stable-eu-02.ec6.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://ec6-bilsteinmarouting-stable-eu-01.ec6.mypna.com:8080/more/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=false&api_version=v5|http://ec6-bilsteinmarouting-stable-eu-02.ec6.mypna.com:8080/more/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://ec6-bilsteinmarouting-stable-eu-01.ec6.mypna.com:8080/more/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=true&api_version=v5|http://ec6-bilsteinmarouting-stable-eu-02.ec6.mypna.com:8080/more/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://ec6-bilsteinmarouting-stable-eu-01.ec6.mypna.com:8080/more/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=false&live_traffic=false&api_version=v5|http://ec6-bilsteinmarouting-stable-eu-02.ec6.mypna.com:8080/more/route/json?&origin=51.141891,1.267105&destination=50.914568,1.946512&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 9
+  ov-bilstein-turkey-test:
+    version: http://ec2t-bilsteinrouting-stable-turkey-01.tst.mypna.com:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://ec2t-bilsteinrouting-stable-turkey-01.tst.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://ec2t-bilsteinrouting-stable-turkey-01.tst.mypna.com:8080/more/route/json?&origin=37.937963,40.200332&destination=39.905310,32.888074&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://ec2t-bilsteinrouting-stable-turkey-01.tst.mypna.com:8080/more/route/json?&origin=37.937963,40.200332&destination=39.905310,32.888074&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://ec2t-bilsteinrouting-stable-turkey-01.tst.mypna.com:8080/more/route/json?&origin=37.937963,40.200332&destination=39.905310,32.888074&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 9
+  ov-bilstein-turkey-stage:
+    version: http://ec2s-bilsteinrouting-stable-turkey-01.stg.mypna.com:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://ec2s-bilsteinrouting-stable-turkey-01.stg.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://ec2s-bilsteinrouting-stable-turkey-01.stg.mypna.com:8080/more/route/json?&origin=37.937963,40.200332&destination=39.905310,32.888074&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://ec2s-bilsteinrouting-stable-turkey-01.stg.mypna.com:8080/more/route/json?&origin=37.937963,40.200332&destination=39.905310,32.888074&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://ec2s-bilsteinrouting-stable-turkey-01.stg.mypna.com:8080/more/route/json?&origin=37.937963,40.200332&destination=39.905310,32.888074&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 9
+  ov-bilstein-turkey-prod:
+    version: http://ec6-bilsteinrouting-stable-turkey-01.ec6.mypna.com:8080/more/route/json?trace=version&api_version=v5|http://ec6-bilsteinrouting-stable-turkey-02.ec6.mypna.com:8080/more/route/json?trace=version&api_version=v5
+    traffic_history: http://ec6-bilsteinrouting-stable-turkey-01.ec6.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5|http://ec6-bilsteinrouting-stable-turkey-02.ec6.mypna.com:8080/more/route/json?trace=traffic_history&api_version=v5
+    route: http://ec6-bilsteinrouting-stable-turkey-01.ec6.mypna.com:8080/more/route/json?&origin=37.937963,40.200332&destination=39.905310,32.888074&output=all&historical_speed=true&live_traffic=false&api_version=v5|http://ec6-bilsteinrouting-stable-turkey-02.ec6.mypna.com:8080/more/route/json?&origin=37.937963,40.200332&destination=39.905310,32.888074&output=all&historical_speed=true&live_traffic=false&api_version=v5
+    route_with_traffic: http://ec6-bilsteinrouting-stable-turkey-01.ec6.mypna.com:8080/more/route/json?&origin=37.937963,40.200332&destination=39.905310,32.888074&output=all&historical_speed=true&live_traffic=true&api_version=v5|http://ec6-bilsteinrouting-stable-turkey-02.ec6.mypna.com:8080/more/route/json?&origin=37.937963,40.200332&destination=39.905310,32.888074&output=all&historical_speed=true&live_traffic=true&api_version=v5
+    history_speed: http://ec6-bilsteinrouting-stable-turkey-01.ec6.mypna.com:8080/more/route/json?&origin=37.937963,40.200332&destination=39.905310,32.888074&output=all&historical_speed=false&live_traffic=false&api_version=v5|http://ec6-bilsteinrouting-stable-turkey-02.ec6.mypna.com:8080/more/route/json?&origin=37.937963,40.200332&destination=39.905310,32.888074&output=all&historical_speed=false&live_traffic=false&api_version=v5
+    length: 9
+  wukong-sea-test:
+    version: https://wukongrouting-sea.tst.k8s.mypna.com/v8/route/json?&trace=version
+    traffic_history: http://wukongrouting-sea.tst.k8s.mypna.com/v8/route/json?&trace=traffic_history
+    route: https://wukongrouting-sea.tst.k8s.mypna.com/v8/route/json?&origin=18.788116,98.995585&destination=13.748743,100.600655&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: https://wukongrouting-sea.tst.k8s.mypna.com/v8/route/json?&origin=18.788116,98.995585&destination=13.748743,100.600655&output=all&historical_speed=false&live_traffic=true
+    history_speed: https://wukongrouting-sea.tst.k8s.mypna.com/v8/route/json?&origin=18.788116,98.995585&destination=13.748743,100.600655&output=all&historical_speed=true&live_traffic=false
+    length: 8
+  wukong-sea-stage:
+    version: https://wukongrouting-sea.stg.k8s.mypna.com/v8/route/json?&trace=version
+    traffic_history: http://wukongrouting-sea.stg.k8s.mypna.com/v8/route/json?&trace=traffic_history
+    route: https://wukongrouting-sea.stg.k8s.mypna.com/v8/route/json?&origin=18.788116,98.995585&destination=13.748743,100.600655&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: https://wukongrouting-sea.stg.k8s.mypna.com/v8/route/json?&origin=18.788116,98.995585&destination=13.748743,100.600655&output=all&historical_speed=false&live_traffic=true
+    history_speed: https://wukongrouting-sea.stg.k8s.mypna.com/v8/route/json?&origin=18.788116,98.995585&destination=13.748743,100.600655&output=all&historical_speed=true&live_traffic=false
+    length: 8
+  wukong-sea-prod:
+    version: https://wukongrouting-sea.k8s.mypna.com/v8/route/json?&trace=version
+    traffic_history: http://wukongrouting-sea.k8s.mypna.com/v8/route/json?&trace=traffic_history
+    route: https://wukongrouting-sea.k8s.mypna.com/v8/route/json?&origin=18.788116,98.995585&destination=13.748743,100.600655&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: https://wukongrouting-sea.k8s.mypna.com/v8/route/json?&origin=18.788116,98.995585&destination=13.748743,100.600655&output=all&historical_speed=false&live_traffic=true
+    history_speed: https://wukongrouting-sea.k8s.mypna.com/v8/route/json?&origin=18.788116,98.995585&destination=13.748743,100.600655&output=all&historical_speed=true&live_traffic=false
+    length: 8
+  wukong-anz-test:
+    version: http://wukongrouting-anz.tst.k8s.mypna.com/v8/route/json?trace=version
+    traffic_history: http://wukongrouting-anz.tst.k8s.mypna.com/v8/route/json?&trace=traffic_history
+    route: https://wukongrouting-anz.tst.k8s.mypna.com/v8/route/json?&origin=-37.778466,145.025663&destination=-33.802502,151.058939&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://wukongrouting-anz.tst.k8s.mypna.com/v8/route/json?&origin=-37.778466,145.025663&destination=-33.802502,151.058939&output=all&historical_speed=true&live_traffic=true
+    history_speed: http://wukongrouting-anz.tst.k8s.mypna.com/v8/route/json?&origin=-37.778466,145.025663&destination=-33.802502,151.058939&output=all&historical_speed=false&live_traffic=false
+    length: 8
+  wukong-anz-stage:
+    version: http://wukongrouting-anz.stg.k8s.mypna.com/v8/route/json?trace=version
+    traffic_history: http://wukongrouting-anz.stg.k8s.mypna.com/v8/route/json?&trace=traffic_history
+    route: https://wukongrouting-anz.stg.k8s.mypna.com/v8/route/json?&origin=-37.778466,145.025663&destination=-33.802502,151.058939&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://wukongrouting-anz.stg.k8s.mypna.com/v8/route/json?&origin=-37.778466,145.025663&destination=-33.802502,151.058939&output=all&historical_speed=true&live_traffic=true
+    history_speed: http://wukongrouting-anz.stg.k8s.mypna.com/v8/route/json?&origin=-37.778466,145.025663&destination=-33.802502,151.058939&output=all&historical_speed=false&live_traffic=false
+    length: 8
+  wukong-anz-prod:
+    version: http://wukongrouting-anz.k8s.mypna.com/v8/route/json?trace=version
+    traffic_history: http://wukongrouting-anz.k8s.mypna.com/v8/route/json?&trace=traffic_history
+    route: https://wukongrouting-anz.k8s.mypna.com/v8/route/json?&origin=-37.778466,145.025663&destination=-33.802502,151.058939&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://wukongrouting-anz.k8s.mypna.com/v8/route/json?&origin=-37.778466,145.025663&destination=-33.802502,151.058939&output=all&historical_speed=true&live_traffic=true
+    history_speed: http://wukongrouting-anz.k8s.mypna.com/v8/route/json?&origin=-37.778466,145.025663&destination=-33.802502,151.058939&output=all&historical_speed=false&live_traffic=false
+    length: 8
+  osm2ngx-na-test:
+    version: http://osm2ngxrouting-na.tst.k8s.mypna.com:80/v8/route/json?&trace=version
+    traffic_history: http://osm2ngxrouting-na.stg.k8s.mypna.com:80/v8/route/json?&trace=traffic_history
+    route: http://osm2ngxrouting-na.tst.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://osm2ngxrouting-na.tst.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false
+    history_speed: http://osm2ngxrouting-na.tst.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false
+    length: 9
+  osm2ngx-na-stage:
+    version: http://osm2ngxrouting-na.stg.k8s.mypna.com:80/v8/route/json?&trace=version
+    traffic_history: http://osm2ngxrouting-na.stg.k8s.mypna.com:80/v8/route/json?&trace=traffic_history
+    route: http://osm2ngxrouting-na.stg.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://osm2ngxrouting-na.stg.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=true
+    history_speed: http://osm2ngxrouting-na.stg.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false
+    length: 9
+  osm2ngx-na-prod:
+    version: http://osm2ngxrouting-na.k8s.mypna.com:80/v8/route/json?&trace=version
+    traffic_history: http://osm2ngxrouting-na.k8s.mypna.com:80/v8/route/json?&trace=traffic_history
+    route: http://osm2ngxrouting-na.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://osm2ngxrouting-na.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=true
+    history_speed: http://osm2ngxrouting-na.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false
+    length: 9
+  mulan-na-test:
+    version: http://mulanrouting-na.tst.k8s.mypna.com:80/v8/route/json?&trace=version
+    traffic_history: http://mulanrouting-na.tst.k8s.mypna.com:80/v8/route/json?&trace=traffic_history
+    route: http://mulanrouting-na.tst.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://mulanrouting-na.tst.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false
+    history_speed: http://mulanrouting-na.tst.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false
+    length: 9
+  mulan-na-stage:
+    version: http://mulanrouting-na.stg.k8s.mypna.com:80/v8/route/json?&trace=version
+    traffic_history: http://mulanrouting-na.stg.k8s.mypna.com:80/v8/route/json?&trace=traffic_history
+    route: http://mulanrouting-na.stg.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://mulanrouting-na.stg.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=true
+    history_speed: http://mulanrouting-na.stg.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false
+    length: 9
+  mulan-na-prod:
+    version: http://mulanrouting-na.k8s.mypna.com:80/v8/route/json?&trace=version
+    traffic_history: http://mulanrouting-na.k8s.mypna.com:80/v8/route/json?&trace=traffic_history
+    route: http://mulanrouting-na.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://mulanrouting-na.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=true&live_traffic=true
+    history_speed: http://mulanrouting-na.k8s.mypna.com:80/v8/route/json?&origin=42.524190,-82.940300&destination=42.508870,-83.028400&output=all&historical_speed=false&live_traffic=false
+    length: 9
+  mulan-sa-test:
+    version: http://mulanrouting-sa.tst.k8s.mypna.com:80/v8/route/json?&trace=version
+    traffic_history: http://mulanrouting-sa.tst.k8s.mypna.com:80/v8/route/json?&trace=traffic_history
+    route: http://mulanrouting-sa.tst.k8s.mypna.com:80/v8/route/json?&origin=-28.51870,-70.89084&destination=-28.53161,-70.92129&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://mulanrouting-sa.tst.k8s.mypna.com:80/v8/route/json?&origin=-28.51870,-70.89084&destination=-28.53161,-70.92129&output=all&historical_speed=true&live_traffic=false
+    history_speed: http://mulanrouting-sa.tst.k8s.mypna.com:80/v8/route/json?&origin=-28.51870,-70.89084&destination=-28.53161,-70.92129&output=all&historical_speed=false&live_traffic=false
+    length: 9
+  mulan-sa-stage:
+    version: http://mulanrouting-sa.stg.k8s.mypna.com:80/v8/route/json?&trace=version
+    traffic_history: http://mulanrouting-sa.stg.k8s.mypna.com:80/v8/route/json?&trace=traffic_history
+    route: http://mulanrouting-sa.stg.k8s.mypna.com:80/v8/route/json?&origin=-28.51870,-70.89084&destination=-28.53161,-70.92129&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://mulanrouting-sa.stg.k8s.mypna.com:80/v8/route/json?&origin=-28.51870,-70.89084&destination=-28.53161,-70.92129&output=all&historical_speed=true&live_traffic=true
+    history_speed: http://mulanrouting-sa.stg.k8s.mypna.com:80/v8/route/json?&origin=-28.51870,-70.89084&destination=-28.53161,-70.92129&output=all&historical_speed=false&live_traffic=false
+    length: 9
+  mulan-sa-prod:
+    version: http://mulanrouting-sa.k8s.mypna.com:80/v8/route/json?&trace=version
+    traffic_history: http://mulanrouting-sa.k8s.mypna.com:80/v8/route/json?&trace=traffic_history
+    route: http://mulanrouting-sa.k8s.mypna.com:80/v8/route/json?&origin=-28.51870,-70.89084&destination=-28.53161,-70.92129&output=all&historical_speed=true&live_traffic=false
+    route_with_traffic: http://mulanrouting-sa.k8s.mypna.com:80/v8/route/json?&origin=-28.51870,-70.89084&destination=-28.53161,-70.92129&output=all&historical_speed=true&live_traffic=true
+    history_speed: http://mulanrouting-sa.k8s.mypna.com:80/v8/route/json?&origin=-28.51870,-70.89084&destination=-28.53161,-70.92129&output=all&historical_speed=false&live_traffic=false
+    length: 9

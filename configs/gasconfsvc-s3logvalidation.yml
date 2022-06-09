@@ -1,0 +1,32 @@
+s3:
+  logtype:
+    event: s3://eventhub.stage/events/
+    logshed: s3://logsheddev/logshed/
+    trips: s3://tndpp/trips/
+    combinetrips: s3://tndpp/combinetrips/
+    mlpreprocess: s3://prediction-dev/preprocess/
+    mldestination: s3://prediction-dev/destination/user_model/
+    mlmultistop: s3://prediction-dev/multi_stop/user_model/
+  extendedhours: 1
+target:
+  dir: temp_eventhub
+  expiredays: 2
+
+oss:
+  logtype:
+    event: oss://eventhub-cn-stage/events/
+    logshed: oss://eventhub-cn-stage/logshed/
+  endpoint: http://oss-cn-shanghai.aliyuncs.com
+  accessKeyId: BpdxJLXrJqV3ZfBg
+  accessKeySecret: UxZUoVAMlEOQjT3XbhewGJ6bMRfjgh
+
+eventprefix:
+  dev:
+    na: dev.
+    cn: dev.
+  stage:
+    na: na_stage.
+    cn: cn_stage.
+    
+file:
+  upload-dir: /uploads

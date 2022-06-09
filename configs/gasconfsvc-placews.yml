@@ -1,0 +1,25 @@
+projects:
+  place-web-svc-test:
+    version: http://10.189.102.209:8181/place/api/v2/version/json
+    onebox_yelp:
+      url: http://10.189.102.209:8181/place/api/v2/search/onebox/json
+      reqbody: "{\"user_lat\":\"43.84282\",\"user_lon\": \"-66.10475\",\"place_data_sources\":[\"YELP_WEB_SERVICE\"],\"cat_ids\": [\"2040\"]}"
+    onebox_ev:
+      url: http://10.189.102.209:8181/place/api/v2/search/onebox/json
+      reqbody: "{\"user_lat\":\"35.8692\",\"user_lon\":\"-80.55208\",\"cat_ids\":[\"771\"],\"place_data_sources\":[\"RIVIAN_WEB_SERVICE\"]}"
+  place-web-svc-stage:
+    version: http://10.189.100.63:8080/place/api/v2/version/json
+    onebox_yelp:
+      url: http://10.189.100.63:8080/place/api/v2/search/onebox/json
+      reqbody: "{\"user_lat\":\"43.84282\",\"user_lon\": \"-66.10475\",\"place_data_sources\":[\"YELP_WEB_SERVICE\"],\"cat_ids\": [\"2040\"]}"
+    onebox_ev:
+      url: http://10.189.100.63:8080/place/api/v2/search/onebox/json
+      reqbody: "{\"user_lat\":\"35.8692\",\"user_lon\":\"-80.55208\",\"cat_ids\":[\"771\"],\"place_data_sources\":[\"RIVIAN_WEB_SERVICE\"]}"
+  place-web-svc-prod:
+    version: http://10.191.102.85:8080/place/api/v2/version/json|http://10.191.101.17:8080/place/api/v2/version/json
+    onebox_yelp:
+      url: http://10.189.100.63:8080/place/api/v2/search/onebox/json
+      reqbody: "{\"user_lat\":\"43.84282\",\"user_lon\": \"-66.10475\",\"place_data_sources\":[\"YELP_WEB_SERVICE\"],\"cat_ids\": [\"2040\"]}"
+    onebox_ev:
+      url: http://10.189.100.63:8080/place/api/v2/search/onebox/json
+      reqbody: "{\"user_lat\":\"35.8692\",\"user_lon\":\"-80.55208\",\"cat_ids\":[\"771\"],\"place_data_sources\":[\"RIVIAN_WEB_SERVICE\"]}"

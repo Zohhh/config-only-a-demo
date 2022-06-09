@@ -1,0 +1,54 @@
+spring.profiles.include: search,routing,user,placews
+logging:
+  config: classpath:log4j2.xml
+
+
+#entity-svc-verification-config:
+#projects:
+#  ford-cn-test:
+#    version: http://172.16.102.158:8080/entity/v4/version/json?api_key=60c498cd-b202-4bf5-bb08-1265320245a3
+#    search: http://172.16.102.158:8080/entity/v4/search/json?api_key=60c498cd-b202-4bf5-bb08-1265320245a3&geo_source=Here&entity_source=here&query=%E4%B8%8A%E6%B5%B7&location=31.236691,121.473451&locale=zh-CN
+#    suggestion: http://172.16.102.158:8080/entity/v4/suggestion/json?api_key=60c498cd-b202-4bf5-bb08-1265320245a3&geo_source=Here&entity_source=here&query=%E4%B8%8A%E6%B5%B7&location=31.236691,121.473451&locale=zh-CN
+#    rgc: http://172.16.102.158:8080/entity/v4/rgc/json?api_key=60c498cd-b202-4bf5-bb08-1265320245a3&geo_source=Here&entity_source=here&location=31.236691,121.473451&locale=zh-CN
+#    detail: http://172.16.102.158:8080/entity/v4/detail/json?api_key=60c498cd-b202-4bf5-bb08-1265320245a3&geo_source=Here&entity_source=here&location=31.236691,121.473451&locale=zh-CN&entity_id=Yz3kuIrmtbfluII7Y289Y247cz3kuIrmtbfluII7dD1jaXR5O2lkPTE3ODA7bHQ9MzEuMjI5ODI7bG49MTIxLjQ3NDAzO3JnYz1mYWxzZTt0dD1jaXR5X2NlbnRlcjtpX2M95LiK5rW3O2lfY289Y2huOwV6
+#    category: http://172.16.102.158:8080/entity/v4/category/json?api_key=60c498cd-b202-4bf5-bb08-1265320245a3&geo_source=Here&entity_source=here&locale=zh-CN
+#  ford-na-stage:
+#    version: http://ec2s-syncentitysvc-03.mypna.com:8080/entity/v4/version/json?api_key=9d84b344-3339-4d6d-b542-f8d7daa8e1db
+#    search: http://ec2s-syncentitysvc-03.stg.mypna.com:8080/entity/v4/search/json?api_key=9d84b344-3339-4d6d-b542-f8d7daa8e1db&entity_source=here&geo_source=here&locale=en-US&query=SJC&location=37.369884,-122.037214
+#    suggestion: http://ec2s-syncentitysvc-03.stg.mypna.com:8080/entity/v4/suggestion/json?api_key=9d84b344-3339-4d6d-b542-f8d7daa8e1db&entity_source=here&geo_source=here&locale=en-US&query=SJC&location=37.369884,-122.037214
+#    rgc: http://ec2s-syncentitysvc-03.stg.mypna.com:8080/entity/v4/rgc/json?api_key=9d84b344-3339-4d6d-b542-f8d7daa8e1db&entity_source=here&geo_source=here&locale=en-US&location=37.369884,-122.037214
+#    detail: http://ec2s-syncentitysvc-03.stg.mypna.com:8080/entity/v4/detail/json?api_key=9d84b344-3339-4d6d-b542-f8d7daa8e1db&entity_source=here&geo_source=here&locale=en-US&entity_id=Yz1xdcOpYmVjO2N5PXF1w6liZWM7Y289Y2FuO2g9MTc5O2w9cXXDqWJlYzt6PWcxaztzPXFjO3NsPWNvbW11bmF1dMOpIG3DqXRyb3BvbGl0YWluZSBkZSBxdcOpYmVjO3NiPXNhaW50IHZhbGxpZXI7c2Q9LHdlc3Q7c2ZuPXJ1ZSBzdC12YWxsaWVyIG87bHQ9NDYuODExNzY7bG49LTcxLjIzNDU0O2dzPWhlcmU7V6
+#    category: http://ec2s-syncentitysvc-03.stg.mypna.com:8080/entity/v4/category/json?api_key=9d84b344-3339-4d6d-b542-f8d7daa8e1db&entity_source=here&geo_source=here&locale=en-US
+
+#  - name: ford
+#    region: cn
+#    env: test
+#    apis:
+#      - version: http://172.16.102.158:8080/entity/v4/version/json?api_key=60c498cd-b202-4bf5-bb08-1265320245a3
+#      - search: http://172.16.102.158:8080/entity/v4/search/json?api_key=60c498cd-b202-4bf5-bb08-1265320245a3&geo_source=Here&entity_source=here&query=%E4%B8%8A%E6%B5%B7&location=31.236691,121.473451&locale=zh-CN
+#      - suggestion: http://172.16.102.158:8080/entity/v4/suggestion/json?api_key=60c498cd-b202-4bf5-bb08-1265320245a3&geo_source=Here&entity_source=here&query=%E4%B8%8A%E6%B5%B7&location=31.236691,121.473451&locale=zh-CN
+#      - rgc: http://172.16.102.158:8080/entity/v4/rgc/json?api_key=60c498cd-b202-4bf5-bb08-1265320245a3&geo_source=Here&entity_source=here&location=31.236691,121.473451&locale=zh-CN
+#  - name: ford
+#    region: cn
+#    env: stage
+#    apis:
+#      - version: http://172.16.102.148:8080/entity/v4/version/json?api_key=60c498cd-b202-4bf5-bb08-1265320245a3|http://sync-stage.jtmap.cn:8082/entity/v4/version/json?api_key=60c498cd-b202-4bf5-bb08-1265320245a3
+#      - search: http://172.16.102.148:8080/entity/v4/search/json?api_key=60c498cd-b202-4bf5-bb08-1265320245a3&geo_source=Here&entity_source=here&query=%E4%B8%8A%E6%B5%B7&location=31.236691,121.473451&locale=zh-CN
+#      - suggestion: http://172.16.102.148:8080/entity/v4/suggestion/json?api_key=60c498cd-b202-4bf5-bb08-1265320245a3&geo_source=Here&entity_source=here&query=%E4%B8%8A%E6%B5%B7&location=31.236691,121.473451&locale=zh-CN
+#      - rgc: http://172.16.102.148:8080/entity/v4/rgc/json?api_key=60c498cd-b202-4bf5-bb08-1265320245a3&geo_source=Here&entity_source=here&location=31.236691,121.473451&locale=zh-CN
+#  - name: ford
+#    region: na
+#    env: stage
+#    apis:
+#      - version: http://ec2s-syncentitysvc-03.mypna.com:8080/entity/v4/version/json?api_key=9d84b344-3339-4d6d-b542-f8d7daa8e1db
+#      - search: http://ec2s-syncentitysvc-03.stg.mypna.com:8080/entity/v4/search/json?api_key=9d84b344-3339-4d6d-b542-f8d7daa8e1db&entity_source=here&geo_source=here&locale=en-US&query=SJC&location=37.369884,-122.037214
+#      - suggestion: http://ec2s-syncentitysvc-03.stg.mypna.com:8080/entity/v4/suggestion/json?api_key=9d84b344-3339-4d6d-b542-f8d7daa8e1db&entity_source=here&geo_source=here&locale=en-US&query=SJC&location=37.369884,-122.037214
+#      - rgc: http://ec2s-syncentitysvc-03.stg.mypna.com:8080/entity/v4/rgc/json?api_key=9d84b344-3339-4d6d-b542-f8d7daa8e1db&entity_source=here&geo_source=here&locale=en-US&location=37.369884,-122.037214
+#  - name: denali
+#    region: na
+#    env: stage
+#    apis:
+#      - version: http://ec2s-autodenalientitysvc-03.mypna.com:8080/entity/v4/version/json?api_key=b81aa5af-eb24-4a81-b3d1-7ef6497b37b5|http://ec2s-autodenalientitysvc-03.mypna.com:8080/entity/v4/version/json?api_key=4df37548-f78b-40b0-ad2f-edc6a9571231|http://ec2s-autodenalientitysvc-03.mypna.com:8080/entity/v4/version/json?api_key=80dc6ef7-0cb3-484e-9ddb-194e7c05d3dd
+#      - search: http://ec2s-autodenalientitysvc-03.mypna.com:8080/entity/v4/search/json?api_key=b81aa5af-eb24-4a81-b3d1-7ef6497b37b5&query=SJC&location=37.37389,-122.00141&limit=1&locale=en-US&entity_source=Here&geo_source=Here|http://ec2s-autodenalientitysvc-03.mypna.com:8080/entity/v4/search/json?api_key=4df37548-f78b-40b0-ad2f-edc6a9571231&query=SJC&location=37.37389,-122.00141&limit=1&locale=en-US&entity_source=Here&geo_source=Here|http://ec2s-autodenalientitysvc-03.mypna.com:8080/entity/v4/search/json?api_key=80dc6ef7-0cb3-484e-9ddb-194e7c05d3dd&query=SJC&location=37.37389,-122.00141&limit=1&locale=en-US&entity_source=Here&geo_source=Here
+#      - suggestion: http://ec2s-autodenalientitysvc-03.mypna.com:8080/entity/v4/suggestion/json?api_key=b81aa5af-eb24-4a81-b3d1-7ef6497b37b5&query=SJC&location=37.37389,-122.00141&limit=1&locale=en-US&entity_source=Here&geo_source=Here|http://ec2s-autodenalientitysvc-03.mypna.com:8080/entity/v4/suggestion/json?api_key=4df37548-f78b-40b0-ad2f-edc6a9571231&query=SJC&location=37.37389,-122.00141&limit=1&locale=en-US&entity_source=Here&geo_source=Here|http://ec2s-autodenalientitysvc-03.mypna.com:8080/entity/v4/suggestion/json?api_key=80dc6ef7-0cb3-484e-9ddb-194e7c05d3dd&query=SJC&location=37.37389,-122.00141&limit=1&locale=en-US&entity_source=Here&geo_source=Here
+#      - rgc: http://ec2s-autodenalientitysvc-03.mypna.com:8080/entity/v4/rgc/json?api_key=b81aa5af-eb24-4a81-b3d1-7ef6497b37b5&entity_source=here&geo_source=here&locale=en-US&location=37.369884,-122.037214|http://ec2s-autodenalientitysvc-03.mypna.com:8080/entity/v4/rgc/json?api_key=4df37548-f78b-40b0-ad2f-edc6a9571231&entity_source=here&geo_source=here&locale=en-US&location=37.369884,-122.037214|http://ec2s-autodenalientitysvc-03.mypna.com:8080/entity/v4/rgc/json?api_key=80dc6ef7-0cb3-484e-9ddb-194e7c05d3dd&entity_source=here&geo_source=here&locale=en-US&location=37.369884,-122.037214
